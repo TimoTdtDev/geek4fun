@@ -1,0 +1,12 @@
+@use '../variables/colors' as colors;
+
+::-webkit-scrollbar {
+    background-color: colors.$slate-200;
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: colors.$slate-300;
+    border-radius: 15px;
+}

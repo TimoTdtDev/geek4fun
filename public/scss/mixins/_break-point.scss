@@ -1,0 +1,47 @@
+@mixin break-point($point: 'lg') {
+
+    //Break-point for > 640px screen
+    @if $point == 'sm' {
+        @media only screen and (min-width: 640px) {
+            //Set the content of media query
+            @content;
+        }
+    }
+
+    //Break-point for > 768px screen
+    @else if $point == 'md' {
+        @media only screen and (min-width: 768px) {
+            //Set the content of media query
+            @content;
+        }
+    }
+
+    //Break-point for > 1024px screen
+    @else if $point == 'lg' {
+        @media only screen and (min-width: 1024px) {
+            //Set the content of media query
+            @content;
+        }
+    }
+
+    //Break-point for > 1280px screen
+    @else if $point == 'xl' {
+        @media only screen and (min-width: 1280px) {
+            //Set the content of media query
+            @content;
+        }
+    }
+
+    //Break-point for > 1536px screen
+    @else if $point == '2xl' {
+        @media only screen and (min-width: 1536px) {
+            //Set the content of media query
+            @content;
+        }
+    }
+
+    //Error for unknown value
+    @else {
+        @error "Unknown value '#{$point}'";
+    }
+}

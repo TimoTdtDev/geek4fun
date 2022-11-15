@@ -1,0 +1,15 @@
+//Base
+@import 'base/reset';
+@import 'base/fonts';
+
+//Layout
+@import 'layout/header';
+@import 'layout/footer';
+
+//Mixins
+@import 'mixins/break-point';
+@import 'mixins/font-size';
+
+body {
+    background-color: red;
+}
